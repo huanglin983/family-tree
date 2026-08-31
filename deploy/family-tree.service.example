@@ -1,0 +1,17 @@
+[Unit]
+Description=Family Tree API
+After=network.target
+
+[Service]
+Type=simple
+User=familytree
+Group=familytree
+WorkingDirectory=/opt/family-tree/server
+EnvironmentFile=/etc/family-tree.env
+ExecStart=/usr/bin/node /opt/family-tree/server/dist/index.js
+Restart=on-failure
+RestartSec=3
+# 单实例，避免多进程写 SQLite
+
+[Install]
+WantedBy=multi-user.target

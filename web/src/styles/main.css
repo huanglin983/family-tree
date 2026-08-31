@@ -1,0 +1,81 @@
+:root {
+  --ft-ink: #2c2419;
+  --ft-muted: #6b5e4f;
+  --ft-paper: #f3ebe0;
+  --ft-paper-deep: #e6d9c8;
+  --ft-accent: #8b3a2a;
+  --ft-line: #c9b8a0;
+  --ft-male: #3d5a7a;
+  --ft-female: #8b4a5a;
+  --van-primary-color: #8b3a2a;
+  --van-tabbar-item-active-color: #8b3a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(139, 58, 42, 0.08), transparent 50%),
+    linear-gradient(180deg, #f7f1e8 0%, var(--ft-paper) 40%, #ebe2d4 100%);
+  color: var(--ft-ink);
+  font-family: 'Source Han Serif SC', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.page {
+  padding: 16px 16px calc(72px + env(safe-area-inset-bottom));
+}
+
+.page-admin {
+  padding: 12px 16px 24px;
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
+}
+
+.page-title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.page-sub {
+  margin: 0 0 20px;
+  color: var(--ft-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-block {
+  background: rgba(255, 252, 247, 0.72);
+  border: 1px solid var(--ft-line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.card-block h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.muted {
+  color: var(--ft-muted);
+  font-size: 0.85rem;
+}
+
+a.linkish {
+  color: var(--ft-accent);
+  text-decoration: none;
+}

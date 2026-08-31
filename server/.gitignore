@@ -1,0 +1,11 @@
+data/
+uploads/*
+!uploads/.gitkeep
+backups/
+*.db
+*.db-wal
+*.db-shm
+node_modules/
+dist/
+pre-import-*.json
+.env
