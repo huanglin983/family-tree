@@ -23,6 +23,11 @@
 ├── deploy/          # Nginx / systemd / env 示例
 ├── docs/            # PRD / 架构 / 部署 / 自测
 └── README.md
+
+# 运行时数据（默认，与仓库分离）
+E:\data\
+├── family.db
+└── uploads/
 ```
 
 | 层 | 职责 | 禁止 |
